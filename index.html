@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Калькулятор расчета стоимости авто</h2>
+    <form action="" id="calculator" class="form_body">
+      <div class="form_item marka">
+        <span class="marka_title">Выберите марку машины</span>
+        <select name="" id="" class="form_input marka_select">
+          <option value="0">Марка машины</option>
+          <option value="1">Renault</option>
+          <option value="2">Peugeot</option>
+        </select>
+      </div>
+        <div class="form_item model">
+          <span class="model_title">Выберите модель машины</span>
+          <select class="form_input model_select" id="type" disabled></select>
+        </div>
+
+        <div class="form_item year">
+          <span class="year_title">Год выпуска</span>
+          <select name="" id="" class="form_input year_select">
+            <option value="300000">2021</option>
+            <option value="250000">2020</option>
+            <option value="200000">2019</option>
+            <option value="150000">2018</option>
+          </select>
+        </div>
+        <div class="form_item">
+          <span class="mileage_title">Введите пробег в км*</span>
+          <input type="number" class="form_input mileage">
+          <div class="mileageError"></div>
+        </div> 
+
+        <div class="form_item control">
+          <span class="control_title">Тип управления</span>
+          <div class="control_auto">
+            <input type="radio" id="auto" name="control" value="100000" checked>
+            <label for="automatic">Автомат</label>
+          </div>
+          <div class="control_mechanic">
+            <input type="radio" id="mechan" name="control" value="0">
+            <label for="mechan">Механика</label>
+          </div>
+        </div>
+
+        <div class="calc">
+          <button class="calc_price">Рассчитать стоимость</button>
+        </div>
+        <div class="result"></div>
+
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
